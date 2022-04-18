@@ -1,7 +1,9 @@
-import Logo from '../assets/logo.svg';
-import Circles from '../assets/circles.svg';
 import Button from '../components/Button';
 import Image from 'next/image';
+import { animated } from 'react-spring';
+
+import Logo from '../assets/logo.svg';
+import Circles from '../assets/circles.svg';
 
 const IndexSection = (): JSX.Element => {
 	return (
@@ -16,7 +18,7 @@ const IndexSection = (): JSX.Element => {
 							от
 							{' '}
 							<br />
-							двух дней
+							трёх дней
 						</span>
 					</p>
 				</div>
@@ -49,7 +51,9 @@ const IndexSection = (): JSX.Element => {
 						className='object-contain'
 						alt='fly2go' />
 				</div>
-				<Circles />
+				<animated.svg width={528} height={869} viewBox='0 0 528 869' fill='none' xmlns='http://www.w3.org/2000/svg'>
+					<Circles />
+				</animated.svg>
 			</div>
 		</section>
 	);

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://wooble.space
+
+# Sitemaps
+Sitemap: https://wooble.space/sitemap.xml

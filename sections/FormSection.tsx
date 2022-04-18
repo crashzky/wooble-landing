@@ -28,7 +28,7 @@ const FormSection = (): JSX.Element => {
 						Планируете проект?
 					</h2>
 					<p className='mt-5 font-semibold text-[22px]'>
-						Оставьте заявку, чтобы узнать стоимость и сроки.
+						Оставьте заявку, чтобы узнать стоимость и сроки
 					</p>
 				</div>
 				<form onSubmit={formik.handleSubmit}>
