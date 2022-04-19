@@ -10,7 +10,7 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
 				<title>
 					Wooble - студия разработки полного цикла
 				</title>
-                                <link rel='icon' href='/favicon.ico' type='image/x-icon' />
+				<link rel='icon' href='/favicon.ico' type='image/x-icon' />
 				<meta
 					name='description'
 					content='Мы небольшая команда, создающая IT-решения для бизнеса разной направленности и сложности.
