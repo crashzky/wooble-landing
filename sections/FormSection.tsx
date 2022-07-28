@@ -21,8 +21,8 @@ const FormSection = (): JSX.Element => {
 	});
 
 	return (
-		<section className='py-[80px] px-[100px]'>
-			<div className='shadow-main rounded-[40px] p-[70px] grid grid-cols-[auto_1fr] gap-24'>
+		<section className='lg:py-[80px] lg:px-[100px]'>
+			<div className='shadow-main rounded-[40px] p-5 lg:p-[70px] lg:grid grid-cols-[auto_1fr] gap-24'>
 				<div>
 					<h2 className='font-tt-travels font-extrabold text-4.5xl'>
 						Планируете проект?
@@ -31,7 +31,7 @@ const FormSection = (): JSX.Element => {
 						Оставьте заявку, чтобы узнать стоимость и сроки
 					</p>
 				</div>
-				<form onSubmit={formik.handleSubmit}>
+				<form onSubmit={formik.handleSubmit} className='mt-5 lg:mt-auto'>
 					<Input
 						value={formik.values.name}
 						name='name'

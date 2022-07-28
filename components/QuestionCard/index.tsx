@@ -16,11 +16,15 @@ const QuestionCard: React.FC<Props> = ({ className = '', label, content, onClick
 			}}
 			{...props}
 		>
-			<div className='flex justify-between'>
-				<h3 className='font-bold text-lg'>
+			<div className='flex justify-between flex-row-reverse lg:flex-row items-center'>
+				<h3 className='font-bold text-lg text-left ml-5 lg:ml-auto'>
 					{label}
 				</h3>
-				<PlusIcon />
+				{isOpen ? (
+					<MinusIcon />
+				) : (
+					<PlusIcon />
+				)}
 			</div>
 			{isOpen && (
 				<p className='mt-3.5 font-semibold text-[#9F9F9F] text-left'>

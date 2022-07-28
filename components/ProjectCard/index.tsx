@@ -6,15 +6,17 @@ import ArrowIcon from '../../assets/arrow.svg';
 const ProjectCard: React.FC<Props> = ({ className = '', imageSrc, imagePosition = 'left',
 	title, categories, link, ...props }) => {
 	return (
-		<article className={className + ' grid grid-cols-2'} {...props}>
+		<article className={className + ' grid lg:grid-cols-2'} {...props}>
 			<Image
 				src={imageSrc}
 				width={600}
 				height={400}
-				className='object-cover'
+				className='object-cover rounded-xl lg:rounded-none'
 				alt='project' />
-			<div className={'grid gap-5 self-center h-min w-fit ' + (imagePosition === 'right' ? 'row-[1] mr-10' : 'ml-10')}>
-				<h3 className='font-tt-travels font-extrabold text-4xl'>
+			<div className={'grid gap-5 self-center h-min w-fit '
+				+ (imagePosition === 'right' ? 'lg:row-[1] lg:mr-10' : 'lg:ml-10')}
+			>
+				<h3 className='font-tt-travels font-extrabold mt-5 lg:mt-auto text-[30px] lg:text-4xl'>
 					{title}
 				</h3>
 				<p className='text-gray font-semibold'>
@@ -24,7 +26,7 @@ const ProjectCard: React.FC<Props> = ({ className = '', imageSrc, imagePosition 
 					<Link href={link}>
 						<a target='_blank' className='text-primary font-bold text-xl'>
 							Смотреть проект	
-							<ArrowIcon className='inline-block ml-[10px]' />
+							<ArrowIcon className='inline-block lg:ml-[10px]' />
 						</a>
 					</Link>
 				)}

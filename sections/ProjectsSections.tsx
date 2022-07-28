@@ -8,17 +8,17 @@ import PROJECTS from '../shared/projects';
 
 const ProjectsSection = (): JSX.Element => {
 	return (
-		<section className='py-20'>
-			<div className='px-30 mb-[100px] flex justify-between items-center'>
-				<h2 className='font-tt-travels text-4.5xl'>
+		<section className='p-5 lg:py-20'>
+			<div className='lg:px-30 mb-10 lg:mb-[100px] flex justify-between items-center'>
+				<h2 className='font-tt-travels text-[45px] lg:text-4.5xl'>
 					Наши проекты
 				</h2>
-				<div>
+				<div className='hidden lg:block'>
 					<BehanceIcon className='inline-block mr-9' />
 					<DribbleIcon className='inline-block' />
 				</div>
 			</div>
-			<div className='px-30 grid gap-[100px]'>
+			<div className='lg:px-30 grid gap-10 lg:gap-[100px]'>
 				{PROJECTS.map((i, num) => (
 					<ProjectCard
 						key={num}
